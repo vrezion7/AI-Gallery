@@ -1,0 +1,198 @@
+{
+  "schemaVersion": "1.0.0",
+  "application": "Gallery Crop Studio",
+  "characterId": "G-004",
+  "artworkVariant": "Final",
+  "artworkLabel": "",
+  "coordinateConvention": "top-left; x,y,width,height; crop pixels in decoded original; normalized relative to original width/height; contain units output-height",
+  "source": {
+    "filename": "Untitled147_20261015211140.png",
+    "width": 1254,
+    "height": 1254,
+    "sizeBytes": 2741938,
+    "lastModified": 1792073502309
+  },
+  "activePreset": "banner",
+  "presets": {
+    "original": {
+      "preset": "original",
+      "aspectRatio": [
+        1254,
+        1254
+      ],
+      "mode": "cover",
+      "crop": {
+        "pixels": {
+          "x": 0,
+          "y": 0,
+          "width": 1254,
+          "height": 1254
+        },
+        "normalized": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        }
+      },
+      "imageTransform": null,
+      "background": null,
+      "export": {
+        "width": 1254,
+        "height": 1254,
+        "format": "webp",
+        "quality": 0.92
+      }
+    },
+    "card": {
+      "preset": "card",
+      "aspectRatio": [
+        3,
+        4
+      ],
+      "mode": "cover",
+      "crop": {
+        "pixels": {
+          "x": 357.94940278226943,
+          "y": 14.130769255873787,
+          "width": 378.7406146542508,
+          "height": 504.9874862056677
+        },
+        "normalized": {
+          "x": 0.2854460947227029,
+          "y": 0.011268556025417693,
+          "width": 0.30202600849621275,
+          "height": 0.402701344661617
+        }
+      },
+      "imageTransform": null,
+      "background": null,
+      "export": {
+        "width": 600,
+        "height": 800,
+        "format": "webp",
+        "quality": 0.92
+      }
+    },
+    "portrait": {
+      "preset": "portrait",
+      "aspectRatio": [
+        2,
+        3
+      ],
+      "mode": "cover",
+      "crop": {
+        "pixels": {
+          "x": 323.9189424611493,
+          "y": 8.279199516461006,
+          "width": 437.6998368995066,
+          "height": 656.5497553492598
+        },
+        "normalized": {
+          "x": 0.2583085665559404,
+          "y": 0.00660223246926715,
+          "width": 0.3490429321367676,
+          "height": 0.5235643982051514
+        }
+      },
+      "imageTransform": null,
+      "background": null,
+      "export": {
+        "width": 800,
+        "height": 1200,
+        "format": "webp",
+        "quality": 0.92
+      }
+    },
+    "avatar": {
+      "preset": "avatar",
+      "aspectRatio": [
+        1,
+        1
+      ],
+      "mode": "cover",
+      "crop": {
+        "pixels": {
+          "x": 425.7675761683686,
+          "y": 24.22228432219137,
+          "width": 258.07803385374723,
+          "height": 258.07803385374723
+        },
+        "normalized": {
+          "x": 0.3395275727020483,
+          "y": 0.019316016205894234,
+          "width": 0.2058038547478048,
+          "height": 0.2058038547478048
+        }
+      },
+      "imageTransform": null,
+      "background": null,
+      "export": {
+        "width": 512,
+        "height": 512,
+        "format": "webp",
+        "quality": 0.92
+      }
+    },
+    "banner": {
+      "preset": "banner",
+      "aspectRatio": [
+        16,
+        9
+      ],
+      "mode": "cover",
+      "crop": {
+        "pixels": {
+          "x": 288.645925200415,
+          "y": 0,
+          "width": 790.2467268912882,
+          "height": 444.5137838763496
+        },
+        "normalized": {
+          "x": 0.23018016363669455,
+          "y": 0,
+          "width": 0.630180802943611,
+          "height": 0.35447670165578116
+        }
+      },
+      "imageTransform": null,
+      "background": null,
+      "export": {
+        "width": 1280,
+        "height": 720,
+        "format": "webp",
+        "quality": 0.92
+      }
+    },
+    "custom": {
+      "preset": "custom",
+      "aspectRatio": [
+        4,
+        3
+      ],
+      "mode": "cover",
+      "crop": {
+        "pixels": {
+          "x": 0,
+          "y": 156.75,
+          "width": 1254,
+          "height": 940.5
+        },
+        "normalized": {
+          "x": 0,
+          "y": 0.125,
+          "width": 1,
+          "height": 0.75
+        }
+      },
+      "imageTransform": null,
+      "background": null,
+      "export": {
+        "width": 800,
+        "height": 600,
+        "format": "webp",
+        "quality": 0.92
+      }
+    }
+  }
+}

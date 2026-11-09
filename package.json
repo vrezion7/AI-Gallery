@@ -1,0 +1,1 @@
+{"name":"ai-gallery-mvp","version":"0.1.1","private":true,"type":"module","scripts":{"test":"node --test tests/state.test.js","build":"python3 build.py"}}

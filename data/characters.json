@@ -1,0 +1,110 @@
+{
+  "G-001": {
+    "id": "G-001",
+    "displayName": "G-001",
+    "featured": false,
+    "archiveOrder": 1,
+    "tags": [],
+    "card": "assets/characters/G-001/G-001_Final_Card.webp",
+    "portrait": "assets/characters/G-001/G-001_Final_Portrait.webp",
+    "splash": "assets/characters/G-001/G-001_Final_Original.webp",
+    "avatar": "assets/characters/G-001/G-001_Final_Avatar.webp",
+    "banner": "assets/characters/G-001/G-001_Final_Banner.webp"
+  },
+  "G-002": {
+    "id": "G-002",
+    "displayName": "G-002",
+    "featured": true,
+    "archiveOrder": 0,
+    "tags": [],
+    "card": "assets/characters/G-002/G-002_Final_Card.webp",
+    "portrait": "assets/characters/G-002/G-002_Final_Portrait.webp",
+    "splash": "assets/characters/G-002/G-002_Final_Original.webp",
+    "avatar": "assets/characters/G-002/G-002_Final_Avatar.webp",
+    "banner": "assets/characters/G-002/G-002_Final_Banner.webp"
+  },
+  "G-003": {
+    "id": "G-003",
+    "displayName": "G-003",
+    "featured": false,
+    "archiveOrder": 3,
+    "tags": [],
+    "card": "assets/characters/G-003/G-003_Final_Card.webp",
+    "portrait": "assets/characters/G-003/G-003_Final_Portrait.webp",
+    "splash": "assets/characters/G-003/G-003_Final_Original.webp",
+    "avatar": "assets/characters/G-003/G-003_Final_Avatar.webp",
+    "banner": "assets/characters/G-003/G-003_Final_Banner.webp"
+  },
+  "G-004": {
+    "id": "G-004",
+    "displayName": "G-004",
+    "featured": false,
+    "archiveOrder": 5,
+    "tags": [],
+    "card": "assets/characters/G-004/G-004_Final_Card.webp",
+    "portrait": "assets/characters/G-004/G-004_Final_Portrait.webp",
+    "splash": "assets/characters/G-004/G-004_Final_Original.webp",
+    "avatar": "assets/characters/G-004/G-004_Final_Avatar.webp",
+    "banner": "assets/characters/G-004/G-004_Final_Banner.webp"
+  },
+  "G-005": {
+    "id": "G-005",
+    "displayName": "G-005",
+    "featured": true,
+    "archiveOrder": 2,
+    "tags": [],
+    "card": "assets/characters/G-005/G-005_Final_Card.webp",
+    "portrait": "assets/characters/G-005/G-005_Final_Portrait.webp",
+    "splash": "assets/characters/G-005/G-005_Final_Original.webp",
+    "avatar": "assets/characters/G-005/G-005_Final_Avatar.webp",
+    "banner": "assets/characters/G-005/G-005_Final_Banner.webp"
+  },
+  "G-006": {
+    "id": "G-006",
+    "displayName": "G-006",
+    "featured": false,
+    "archiveOrder": 6,
+    "tags": [],
+    "card": "assets/characters/G-006/G-006_Final_Card.webp",
+    "portrait": "assets/characters/G-006/G-006_Final_Portrait.webp",
+    "splash": "assets/characters/G-006/G-006_Final_Original.webp",
+    "avatar": "assets/characters/G-006/G-006_Final_Avatar.webp",
+    "banner": "assets/characters/G-006/G-006_Final_Banner.webp"
+  },
+  "G-007": {
+    "id": "G-007",
+    "displayName": "G-007",
+    "featured": false,
+    "archiveOrder": 7,
+    "tags": [],
+    "card": "assets/characters/G-007/G-007_Final_Card.webp",
+    "portrait": "assets/characters/G-007/G-007_Final_Portrait.webp",
+    "splash": "assets/characters/G-007/G-007_Final_Original.webp",
+    "avatar": "assets/characters/G-007/G-007_Final_Avatar.webp",
+    "banner": "assets/characters/G-007/G-007_Final_Banner.webp"
+  },
+  "G-008": {
+    "id": "G-008",
+    "displayName": "G-008",
+    "featured": false,
+    "archiveOrder": 8,
+    "tags": [],
+    "card": "assets/characters/G-008/G-008_Final_Card.webp",
+    "portrait": "assets/characters/G-008/G-008_Final_Portrait.webp",
+    "splash": "assets/characters/G-008/G-008_Final_Original.webp",
+    "avatar": "assets/characters/G-008/G-008_Final_Avatar.webp",
+    "banner": "assets/characters/G-008/G-008_Final_Banner.webp"
+  },
+  "G-009": {
+    "id": "G-009",
+    "displayName": "G-009",
+    "featured": true,
+    "archiveOrder": 4,
+    "tags": [],
+    "card": "assets/characters/G-009/G-009_Final_Card.webp",
+    "portrait": "assets/characters/G-009/G-009_Final_Portrait.webp",
+    "splash": "assets/characters/G-009/G-009_Final_Original.webp",
+    "avatar": "assets/characters/G-009/G-009_Final_Avatar.webp",
+    "banner": "assets/characters/G-009/G-009_Final_Banner.webp"
+  }
+}

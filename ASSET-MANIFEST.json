@@ -1,0 +1,510 @@
+{
+  "source": "Gallery-prototype.zip",
+  "preflight": "PASS: 45 decoded WebP, 9 valid crop JSON; bytes preserved",
+  "assets": [
+    {
+      "source": "G-001/G-001_Final_Card.webp",
+      "path": "assets/characters/G-001/G-001_Final_Card.webp",
+      "bytes": 123948,
+      "sha256": "cfeb71796fde5fb523881c958aa92d3ae98e3318f923e8b512f7dd1b8f2dd08a",
+      "dimensions": [
+        600,
+        800
+      ]
+    },
+    {
+      "source": "G-001/G-001_Final_Portrait.webp",
+      "path": "assets/characters/G-001/G-001_Final_Portrait.webp",
+      "bytes": 211424,
+      "sha256": "8a880a27dfab2daa454b9281db4375ed69b3fe17ff14c0ff79e169f6670066b9",
+      "dimensions": [
+        800,
+        1200
+      ]
+    },
+    {
+      "source": "G-001/G-001_Final_Original.webp",
+      "path": "assets/characters/G-001/G-001_Final_Original.webp",
+      "bytes": 429586,
+      "sha256": "23ad49d2b1bea520f57fc78ed44f2829cce490a981d43bdfb537518e0720f3ae",
+      "dimensions": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "source": "G-001/G-001_Final_Avatar.webp",
+      "path": "assets/characters/G-001/G-001_Final_Avatar.webp",
+      "bytes": 65926,
+      "sha256": "71888809fb5b7e0fc23db25fbb5015354b8afe22e76adc940d6da92653b7c59d",
+      "dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "source": "G-001/G-001_Final_Banner.webp",
+      "path": "assets/characters/G-001/G-001_Final_Banner.webp",
+      "bytes": 194578,
+      "sha256": "36c9d88f7daadea85f24b34891ac6c94e8a511e867219419251395b5807a60a5",
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "source": "G-001/G-001_Final_CropProject.json",
+      "path": "assets/characters/G-001/G-001_Final_CropProject.json",
+      "bytes": 4398,
+      "sha256": "4d680dec277c45748286306f0320ab7144402ab57a11da8b3e50284831bd83d6"
+    },
+    {
+      "source": "G-002/G-002_Final_Card.webp",
+      "path": "assets/characters/G-002/G-002_Final_Card.webp",
+      "bytes": 108954,
+      "sha256": "1b4cbf5a2e79bc53419cbd93a81e29751054c136aa143f70b7bbaaedf3f3c348",
+      "dimensions": [
+        600,
+        800
+      ]
+    },
+    {
+      "source": "G-002/G-002_Final_Portrait.webp",
+      "path": "assets/characters/G-002/G-002_Final_Portrait.webp",
+      "bytes": 203260,
+      "sha256": "6bd5180145ae736d2f3d61fab811b8ab48cc278208d50b701184644da0b3084a",
+      "dimensions": [
+        800,
+        1200
+      ]
+    },
+    {
+      "source": "G-002/G-002_Final_Original.webp",
+      "path": "assets/characters/G-002/G-002_Final_Original.webp",
+      "bytes": 380680,
+      "sha256": "c3b616823efd172126e92e9bc7ffd3427ab9ffd0c9c236dd52ae090ed64db8b1",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "source": "G-002/G-002_Final_Avatar.webp",
+      "path": "assets/characters/G-002/G-002_Final_Avatar.webp",
+      "bytes": 60430,
+      "sha256": "f000ca098ee00aa78d01a7a81077cada38f9e3a575c673a48ecc6e8fdfe2dc86",
+      "dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "source": "G-002/G-002_Final_Banner.webp",
+      "path": "assets/characters/G-002/G-002_Final_Banner.webp",
+      "bytes": 208508,
+      "sha256": "53fe73c572a0f0e0b683a9aaef07f906e5fb20b3cafe9201ae33b1708dfd9b4a",
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "source": "G-002/G-002_Final_CropProject.json",
+      "path": "assets/characters/G-002/G-002_Final_CropProject.json",
+      "bytes": 4344,
+      "sha256": "c26ab1bc28e703d90ca4c8a20edd7dcabe17fb60cea78266f25e033988697fc9"
+    },
+    {
+      "source": "G-003/G-003_Final_Card.webp",
+      "path": "assets/characters/G-003/G-003_Final_Card.webp",
+      "bytes": 80312,
+      "sha256": "61f15fe138e4bb99b54a3992c05b701b5d9451dcf2ea53a75b661440f6b1391c",
+      "dimensions": [
+        600,
+        800
+      ]
+    },
+    {
+      "source": "G-003/G-003_Final_Portrait.webp",
+      "path": "assets/characters/G-003/G-003_Final_Portrait.webp",
+      "bytes": 127706,
+      "sha256": "3b7cb08f0d0d2053dad30ca0204c270602bc3ae698020b81f1e5ca457ebe0fb2",
+      "dimensions": [
+        800,
+        1200
+      ]
+    },
+    {
+      "source": "G-003/G-003_Final_Original.webp",
+      "path": "assets/characters/G-003/G-003_Final_Original.webp",
+      "bytes": 341360,
+      "sha256": "f3d199b4753a7c673d1aecf5b008392423b6961373c50690acf5259f37ef2ab0",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "source": "G-003/G-003_Final_Avatar.webp",
+      "path": "assets/characters/G-003/G-003_Final_Avatar.webp",
+      "bytes": 45382,
+      "sha256": "a140a23f8fb0978e38d0d656fead7ebe4c3f47d08342ec1dd43cf969a890027e",
+      "dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "source": "G-003/G-003_Final_Banner.webp",
+      "path": "assets/characters/G-003/G-003_Final_Banner.webp",
+      "bytes": 156652,
+      "sha256": "52fd915725b919fa1b77c5d0e3cb36a095fd3ea399c4ccb408d69af57c5d8efe",
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "source": "G-003/G-003_Final_CropProject.json",
+      "path": "assets/characters/G-003/G-003_Final_CropProject.json",
+      "bytes": 4277,
+      "sha256": "b46d578a67f21b767c3b68cfe7475d26769b63fbc44bbc3c83576ec0cf343171"
+    },
+    {
+      "source": "G-004/G-004_Final_Card.webp",
+      "path": "assets/characters/G-004/G-004_Final_Card.webp",
+      "bytes": 114930,
+      "sha256": "e89ad4bc11d95fbe65a4866af6062a90982cd11d473cf1f341c0eecade9b8b39",
+      "dimensions": [
+        600,
+        800
+      ]
+    },
+    {
+      "source": "G-004/G-004_Final_Portrait.webp",
+      "path": "assets/characters/G-004/G-004_Final_Portrait.webp",
+      "bytes": 184610,
+      "sha256": "6ba5759cc0e9953889f75c83b59a74f26a65ce1c039d4f15a05e2d9626141d5b",
+      "dimensions": [
+        800,
+        1200
+      ]
+    },
+    {
+      "source": "G-004/G-004_Final_Original.webp",
+      "path": "assets/characters/G-004/G-004_Final_Original.webp",
+      "bytes": 418514,
+      "sha256": "b267ca22688e4262da810f677da8ec23bb3c9329626b5ba43a90a50346f3a6b5",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "source": "G-004/G-004_Final_Avatar.webp",
+      "path": "assets/characters/G-004/G-004_Final_Avatar.webp",
+      "bytes": 57892,
+      "sha256": "38534de2ddbe15ec9adc60dc28908f55093808ba20eff1ee36e802f42fdec6d6",
+      "dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "source": "G-004/G-004_Final_Banner.webp",
+      "path": "assets/characters/G-004/G-004_Final_Banner.webp",
+      "bytes": 183176,
+      "sha256": "ec2d7d35f55d3825d4e406fd7102797858ad00781d1b2e54b55665cb6c1b3d07",
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "source": "G-004/G-004_Final_CropProject.json",
+      "path": "assets/characters/G-004/G-004_Final_CropProject.json",
+      "bytes": 4382,
+      "sha256": "0dc84d8aa932d2575ecfa790ab36055eb5aad5b2ad3218ccc0a93cacb829b54b"
+    },
+    {
+      "source": "G-005/G-005_Final_Card.webp",
+      "path": "assets/characters/G-005/G-005_Final_Card.webp",
+      "bytes": 131418,
+      "sha256": "bc691e8fd8c20687e2b43b5eb9e7e2c7f63acf18ca45be472be624acddfc4821",
+      "dimensions": [
+        600,
+        800
+      ]
+    },
+    {
+      "source": "G-005/G-005_Final_Portrait.webp",
+      "path": "assets/characters/G-005/G-005_Final_Portrait.webp",
+      "bytes": 202146,
+      "sha256": "5e8c8da655d2e37f74457055a920cfce33fb910c16399f88342e81f75bc99216",
+      "dimensions": [
+        800,
+        1200
+      ]
+    },
+    {
+      "source": "G-005/G-005_Final_Original.webp",
+      "path": "assets/characters/G-005/G-005_Final_Original.webp",
+      "bytes": 469102,
+      "sha256": "da785f6539d1cb8ed105452a4fc90e81df773b941ba23512b7dda8898afbec07",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "source": "G-005/G-005_Final_Avatar.webp",
+      "path": "assets/characters/G-005/G-005_Final_Avatar.webp",
+      "bytes": 73650,
+      "sha256": "9bff3ce2a4770c1d44fe79192243b5a8ea392a754e740c55849bdca47c0b106a",
+      "dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "source": "G-005/G-005_Final_Banner.webp",
+      "path": "assets/characters/G-005/G-005_Final_Banner.webp",
+      "bytes": 257822,
+      "sha256": "736a18734249efdc94ba6ee203759c67986d9559369990443f5928cc088d5ad0",
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "source": "G-005/G-005_Final_CropProject.json",
+      "path": "assets/characters/G-005/G-005_Final_CropProject.json",
+      "bytes": 4297,
+      "sha256": "d7150d62645499fd715f23178554323121140d22503537dc0acd958a2ea34557"
+    },
+    {
+      "source": "G-006/G-006_Final_Card.webp",
+      "path": "assets/characters/G-006/G-006_Final_Card.webp",
+      "bytes": 107102,
+      "sha256": "24a52a9c4a8de14a1de0c11fdfa931a441f777a650c73e4d2f26a4c147302f66",
+      "dimensions": [
+        600,
+        800
+      ]
+    },
+    {
+      "source": "G-006/G-006_Final_Portrait.webp",
+      "path": "assets/characters/G-006/G-006_Final_Portrait.webp",
+      "bytes": 185326,
+      "sha256": "8e0eb9a54afc67b37838607499507c198362ca837fd453d079f13498295bb05a",
+      "dimensions": [
+        800,
+        1200
+      ]
+    },
+    {
+      "source": "G-006/G-006_Final_Original.webp",
+      "path": "assets/characters/G-006/G-006_Final_Original.webp",
+      "bytes": 342482,
+      "sha256": "332ce21fe7a01e78f60900c288485c25051cc4b0480d8280c9c1f5906d4b4c6a",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "source": "G-006/G-006_Final_Avatar.webp",
+      "path": "assets/characters/G-006/G-006_Final_Avatar.webp",
+      "bytes": 71272,
+      "sha256": "9399aec76649f6790c2c817282ca54e9a3a3ca625858fa725a25025e1fb7ebc9",
+      "dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "source": "G-006/G-006_Final_Banner.webp",
+      "path": "assets/characters/G-006/G-006_Final_Banner.webp",
+      "bytes": 197640,
+      "sha256": "787a099579b2f492d6af20e2e700f655c1bab8d823ff67031f1f41da0f0dd306",
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "source": "G-006/G-006_Final_CropProject.json",
+      "path": "assets/characters/G-006/G-006_Final_CropProject.json",
+      "bytes": 4328,
+      "sha256": "10719ad0ae15960c1d778e546d3d0010d4208efa14746e621e570149680314de"
+    },
+    {
+      "source": "G-007/G-007_Final_Card.webp",
+      "path": "assets/characters/G-007/G-007_Final_Card.webp",
+      "bytes": 114134,
+      "sha256": "c8e79f07a4a2cd8458707d89b815b460d0e8db9cf5e757bb96094fc4b6cebead",
+      "dimensions": [
+        600,
+        800
+      ]
+    },
+    {
+      "source": "G-007/G-007_Final_Portrait.webp",
+      "path": "assets/characters/G-007/G-007_Final_Portrait.webp",
+      "bytes": 192094,
+      "sha256": "f7558be0796ba75854c38d24c26c799c8aca9657cbbc8b9a27facc2e137094c3",
+      "dimensions": [
+        800,
+        1200
+      ]
+    },
+    {
+      "source": "G-007/G-007_Final_Original.webp",
+      "path": "assets/characters/G-007/G-007_Final_Original.webp",
+      "bytes": 374350,
+      "sha256": "992a9bbd008539553da2b4e2b7196e9750778996cde0135e8a3ce8624d99d3b2",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "source": "G-007/G-007_Final_Avatar.webp",
+      "path": "assets/characters/G-007/G-007_Final_Avatar.webp",
+      "bytes": 66520,
+      "sha256": "2ed11332e073315f401eeb4fa3330dd698e22058984105c9194c97d97e580f06",
+      "dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "source": "G-007/G-007_Final_Banner.webp",
+      "path": "assets/characters/G-007/G-007_Final_Banner.webp",
+      "bytes": 219744,
+      "sha256": "cbc6d5208a632426ea39f2a39763d4e0415054ab3e7edd0fc741c0e923d388cd",
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "source": "G-007/G-007_Final_CropProject.json",
+      "path": "assets/characters/G-007/G-007_Final_CropProject.json",
+      "bytes": 4359,
+      "sha256": "294596c5eb6434994b8bd5b0eb8d53925b4d9bce21ab07425391eb90b7182d2c"
+    },
+    {
+      "source": "G-008/G-008_Final_Card.webp",
+      "path": "assets/characters/G-008/G-008_Final_Card.webp",
+      "bytes": 116646,
+      "sha256": "4b9c7e9e59ef8b190f180b8693a8443ee8dc554abae459c17a9d73e9a18d39ee",
+      "dimensions": [
+        600,
+        800
+      ]
+    },
+    {
+      "source": "G-008/G-008_Final_Portrait.webp",
+      "path": "assets/characters/G-008/G-008_Final_Portrait.webp",
+      "bytes": 202008,
+      "sha256": "407806bcca13de429edb2508804eaab96bfcb88a8b799258186f024a799ca13d",
+      "dimensions": [
+        800,
+        1200
+      ]
+    },
+    {
+      "source": "G-008/G-008_Final_Original.webp",
+      "path": "assets/characters/G-008/G-008_Final_Original.webp",
+      "bytes": 417038,
+      "sha256": "c363adf909a7796dc3cd38c4f4160933f29428a65a3f51fee2bd53d6350316fd",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "source": "G-008/G-008_Final_Avatar.webp",
+      "path": "assets/characters/G-008/G-008_Final_Avatar.webp",
+      "bytes": 69138,
+      "sha256": "3e0dae52acdd4b42000b450d22af35d5996ee5beba48abaddae04f35f32ed116",
+      "dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "source": "G-008/G-008_Final_Banner.webp",
+      "path": "assets/characters/G-008/G-008_Final_Banner.webp",
+      "bytes": 216066,
+      "sha256": "fb41f3ae86a92ae1f0f4733e01c61e7a606e7ce24c6a0f41abbcffbf44918050",
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "source": "G-008/G-008_Final_CropProject.json",
+      "path": "assets/characters/G-008/G-008_Final_CropProject.json",
+      "bytes": 4434,
+      "sha256": "ee35c815ed218a16b41ca89627e585420fb6350fd1cb4aabf42656cd062e86e2"
+    },
+    {
+      "source": "G-009/G-009_Final_Card.webp",
+      "path": "assets/characters/G-009/G-009_Final_Card.webp",
+      "bytes": 70416,
+      "sha256": "e9552f1a7349b3a342072e8a320efe86d4b7122b4dfe859cc9c2ab5d1ff3a84e",
+      "dimensions": [
+        600,
+        800
+      ]
+    },
+    {
+      "source": "G-009/G-009_Final_Portrait.webp",
+      "path": "assets/characters/G-009/G-009_Final_Portrait.webp",
+      "bytes": 145876,
+      "sha256": "a898926d5e5ac70f274132d08b4d84c2bc5abad4c6657977f30f6665f88caada",
+      "dimensions": [
+        800,
+        1200
+      ]
+    },
+    {
+      "source": "G-009/G-009_Final_Original.webp",
+      "path": "assets/characters/G-009/G-009_Final_Original.webp",
+      "bytes": 316550,
+      "sha256": "e0aa8429b9dd8872846d38d817b4ec7dd4c45b91ad451999b0a8992556386691",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "source": "G-009/G-009_Final_Avatar.webp",
+      "path": "assets/characters/G-009/G-009_Final_Avatar.webp",
+      "bytes": 39406,
+      "sha256": "8a326ff08bdfd0c440f66b0e8c93fdc9ba557f845116220389557c4e273ae43a",
+      "dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "source": "G-009/G-009_Final_Banner.webp",
+      "path": "assets/characters/G-009/G-009_Final_Banner.webp",
+      "bytes": 99038,
+      "sha256": "e81661a55091eaab3fa3dca76cfc3b9d6a7dabfddcce976e382eb6ddd73430f1",
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "source": "G-009/G-009_Final_CropProject.json",
+      "path": "assets/characters/G-009/G-009_Final_CropProject.json",
+      "bytes": 4323,
+      "sha256": "a2511a1a0a36ca58e55295b99a27f797ce4f33557c473d8369db73c38399c3ca"
+    }
+  ]
+}
