@@ -25,12 +25,12 @@ test("Summon never draws a Featured character", () => {
     assert.equal(registry[id].featured, false);
   }
 });
-test("seven pulls exhaust the Mystery pool without duplicates, over 1000 random runs", () => {
+test("eight pulls exhaust the Mystery pool without duplicates, over 1000 random runs", () => {
   const mysteries = ids.filter((i) => !registry[i].featured);
-  assert.equal(mysteries.length, 7);
+  assert.equal(mysteries.length, 8);
   for (let run = 0; run < 1000; run++) {
     let s = sanitize(null, ids);
-    for (let n = 0; n < 7; n++) {
+    for (let n = 0; n < 8; n++) {
       const id = choose(s, registry);
       assert.ok(id);
       assert.ok(!s.collectedIds.includes(id));
@@ -38,16 +38,16 @@ test("seven pulls exhaust the Mystery pool without duplicates, over 1000 random 
       s = sanitize(JSON.parse(JSON.stringify(s)), ids);
       assert.equal(s.pendingReveal, id);
     }
-    assert.equal(new Set(s.collectedIds).size, 7);
+    assert.equal(new Set(s.collectedIds).size, 8);
     assert.deepEqual([...s.collectedIds].sort(), [...mysteries].sort());
     assert.equal(choose(s, registry), null);
-    assert.equal(ownedIds(s, registry).length, 10);
+    assert.equal(ownedIds(s, registry).length, 11);
   }
 });
 test("selection partitions the remaining Mystery IDs equally", () => {
   const s = acquire(sanitize(null, ids), "G-001"),
     pool = ids.filter((i) => i !== "G-001" && !registry[i].featured);
-  assert.equal(pool.length, 6);
+  assert.equal(pool.length, 7);
   for (let i = 0; i < pool.length; i++)
     assert.equal(
       choose(s, registry, () => (i + 0.5) / pool.length),
@@ -81,11 +81,11 @@ test("saves from v0.1.0/v0.1.1 that already list a Featured ID are counted once 
     seen.push(id);
     s = acquire(s, id);
   }
-  assert.equal(seen.length, 6);
-  assert.equal(ownedIds(s, registry).length, 10);
+  assert.equal(seen.length, 7);
+  assert.equal(ownedIds(s, registry).length, 11);
   assert.ok(seen.every((id) => !registry[id].featured));
 });
-test("archive fixed slots (G-010 fills the last slot) and featured set", () => {
+test("archive fixed slots (G-010, G-011 appended) and featured set", () => {
   assert.deepEqual(
     Object.values(registry)
       .filter((c) => c.featured)
@@ -107,6 +107,7 @@ test("archive fixed slots (G-010 fills the last slot) and featured set", () => {
       "G-007",
       "G-008",
       "G-010",
+      "G-011",
     ],
   );
 });

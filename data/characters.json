@@ -118,5 +118,17 @@
     "splash": "assets/characters/G-010/G-010_Final_Original.webp",
     "avatar": "assets/characters/G-010/G-010_Final_Avatar.webp",
     "banner": "assets/characters/G-010/G-010_Final_Banner.webp"
+  },
+  "G-011": {
+    "id": "G-011",
+    "displayName": "G-011",
+    "featured": false,
+    "archiveOrder": 10,
+    "tags": [],
+    "card": "assets/characters/G-011/G-011_Final_Card.webp",
+    "portrait": "assets/characters/G-011/G-011_Final_Portrait.webp",
+    "splash": "assets/characters/G-011/G-011_Final_Original.webp",
+    "avatar": "assets/characters/G-011/G-011_Final_Avatar.webp",
+    "banner": "assets/characters/G-011/G-011_Final_Banner.webp"
   }
 }
