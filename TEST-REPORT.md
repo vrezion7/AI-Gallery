@@ -1,5 +1,13 @@
 # AI Gallery Sites MVP v0.1 — actual test report
 
+## v0.1.2 addendum (10 November 2026)
+
+Change: Featured (G-002, G-005, G-009) are owned from the start; Summon draws only the six Mystery characters (6 pulls to 9/9). Result screen spacing from v0.1.1 retained.
+
+- `node --test tests/state.test.js`: 8 tests, 8 passed (Summon never draws Featured; 1,000 runs of 6 pulls exhaust Mystery with no duplicates and reach 9 owned; Featured-first ownership order; legacy saves that already list a Featured ID are counted once and finish in the remaining pulls).
+- Headless Chrome, 360 × 740 mobile viewport, no console/HTTP errors: new visitor sees 3 / 9 with three FEATURED cards and six Mystery slots; Featured detail reads "In your collection"; six pulls produced six different Mystery IDs with counters 4/9 to 9/9, ended on Collection, Summon showed Collection Complete, and Collection listed Featured first then discovery order. A legacy save (`["G-006","G-002"]`) showed 4 / 9 and needed 5 pulls.
+- Not re-verified on a physical Android device after this change.
+
 ## v0.1.1 addendum (9 November 2026)
 
 Changes: Mystery-first summon pool, Detail no longer repeats the ID, `<main>` focus ring removed, code reformatted with Prettier (no logic change from formatting).

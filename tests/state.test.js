@@ -1,29 +1,36 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
-import { sanitize, choose, acquire } from "../src/state.js";
-const registry = JSON.parse(fs.readFileSync(new URL("../data/characters.json", import.meta.url))),
+import { sanitize, choose, acquire, ownedIds } from "../src/state.js";
+const registry = JSON.parse(
+    fs.readFileSync(new URL("../data/characters.json", import.meta.url)),
+  ),
   ids = Object.keys(registry);
 test("corrupt, unknown and duplicate IDs sanitized; pending must be owned", () => {
   assert.deepEqual(
     sanitize(
-      { collectedIds: ["bad", "G-002", "G-002", null, "G-001"], pendingReveal: "G-005" },
+      {
+        collectedIds: ["bad", "G-002", "G-002", null, "G-001"],
+        pendingReveal: "G-005",
+      },
       ids,
     ),
     { schemaVersion: 1, collectedIds: ["G-002", "G-001"], pendingReveal: null },
   );
   assert.deepEqual(sanitize(null, ids).collectedIds, []);
 });
-test("every first draw interval selects a mystery; featured remain unowned", () => {
+test("Summon never draws a Featured character", () => {
   for (let i = 0; i < 600; i++) {
     const id = choose(sanitize(null, ids), registry, () => i / 600);
     assert.equal(registry[id].featured, false);
   }
 });
-test("nine pulls complete without duplicates over 1000 random runs; persistence retains pending", () => {
+test("six pulls exhaust the Mystery pool without duplicates, over 1000 random runs", () => {
+  const mysteries = ids.filter((i) => !registry[i].featured);
+  assert.equal(mysteries.length, 6);
   for (let run = 0; run < 1000; run++) {
     let s = sanitize(null, ids);
-    for (let n = 0; n < 9; n++) {
+    for (let n = 0; n < 6; n++) {
       const id = choose(s, registry);
       assert.ok(id);
       assert.ok(!s.collectedIds.includes(id));
@@ -31,11 +38,13 @@ test("nine pulls complete without duplicates over 1000 random runs; persistence 
       s = sanitize(JSON.parse(JSON.stringify(s)), ids);
       assert.equal(s.pendingReveal, id);
     }
-    assert.equal(new Set(s.collectedIds).size, 9);
+    assert.equal(new Set(s.collectedIds).size, 6);
+    assert.deepEqual([...s.collectedIds].sort(), [...mysteries].sort());
     assert.equal(choose(s, registry), null);
+    assert.equal(ownedIds(s, registry).length, 9);
   }
 });
-test("later selection equally partitions remaining Mystery IDs only", () => {
+test("selection partitions the remaining Mystery IDs equally", () => {
   const s = acquire(sanitize(null, ids), "G-001"),
     pool = ids.filter((i) => i !== "G-001" && !registry[i].featured);
   assert.equal(pool.length, 5);
@@ -45,32 +54,36 @@ test("later selection equally partitions remaining Mystery IDs only", () => {
       pool[i],
     );
 });
-test("all six Mystery characters come before any Featured, over 1000 random runs", () => {
-  const mysteryCount = ids.filter((i) => !registry[i].featured).length;
-  for (let run = 0; run < 1000; run++) {
-    let s = sanitize(null, ids);
-    for (let n = 0; n < 9; n++) {
-      const id = choose(s, registry);
-      assert.equal(registry[id].featured, n >= mysteryCount, `pull ${n + 1} returned ${id}`);
-      s = acquire(s, id);
-    }
-  }
+test("a new visitor already owns exactly the three Featured, in archive order", () => {
+  assert.deepEqual(ownedIds(sanitize(null, ids), registry), [
+    "G-002",
+    "G-005",
+    "G-009",
+  ]);
 });
-test("Featured become available once Mysteries are exhausted, even with old saved progress", () => {
-  // Progress saved under the old rule may already hold a Featured character.
+test("owned list: Featured first, then Summon discoveries in discovery order", () => {
+  let s = sanitize(null, ids);
+  s = acquire(s, "G-006");
+  s = acquire(s, "G-001");
+  assert.deepEqual(ownedIds(s, registry), [
+    "G-002",
+    "G-005",
+    "G-009",
+    "G-006",
+    "G-001",
+  ]);
+});
+test("saves from v0.1.0/v0.1.1 that already list a Featured ID are counted once and still finish", () => {
   let s = sanitize({ collectedIds: ["G-006", "G-002"] }, ids);
+  assert.deepEqual(ownedIds(s, registry), ["G-002", "G-005", "G-009", "G-006"]);
   const seen = [];
-  while (true) {
-    const id = choose(s, registry);
-    if (!id) break;
+  for (let id; (id = choose(s, registry)); ) {
     seen.push(id);
     s = acquire(s, id);
   }
-  assert.deepEqual(
-    seen.slice(0, 5).every((id) => !registry[id].featured),
-    true,
-  );
-  assert.deepEqual(seen.slice(5).sort(), ["G-005", "G-009"]);
+  assert.equal(seen.length, 5);
+  assert.equal(ownedIds(s, registry).length, 9);
+  assert.ok(seen.every((id) => !registry[id].featured));
 });
 test("archive fixed slots and featured set", () => {
   assert.deepEqual(
