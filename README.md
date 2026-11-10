@@ -42,7 +42,7 @@ ZIP asli tidak digandakan ke bundle publik. Simpan ZIP asli sebagai arsip terpis
 
 ## Registry dan posisi Archive
 
-Featured: **G-002, G-005, G-009**, bisa dilihat dan otomatis dimiliki sejak awal. Collection dimulai pada 3/9 (sejak v0.1.2).
+Featured: **G-002, G-005, G-009**, bisa dilihat dan otomatis dimiliki sejak awal. Collection dimulai pada 3/10 (sejak v0.1.3; 3/9 di v0.1.2). Mystery: G-001, G-003, G-004, G-006, G-007, G-008, G-010.
 
 Urutan `archiveOrder` dimulai dari 0:
 
@@ -52,19 +52,21 @@ Urutan `archiveOrder` dimulai dari 0:
 | 2 | G-005 Featured | G-003 mystery |
 | 3 | G-009 Featured | G-004 mystery |
 | 4 | G-006 mystery | G-007 mystery |
-| 5 | G-008 mystery | kosong |
+| 5 | G-008 mystery | G-010 mystery |
 
 Kartu misteri membuka slot yang sama saat ditemukan. Tidak ada informasi identitas di kartu yang belum terbuka. Ini concealment UI, bukan keamanan aset: registry dan gambar statis dapat diunduh publik.
 
 Edit `data/characters.json` untuk mengganti `displayName` dengan nama yang disetujui. Biarkan ID jika nama belum tersedia. Tag tidak ditampilkan dalam MVP karena data grounded belum diberikan. Jangan mengarang lore. Pertahankan `id`, `featured`, `archiveOrder`, dan mapping path kecuali perubahan produk memang diinginkan. `splash` menggunakan `Final_Original.webp`; `portrait` untuk Detail; `card` untuk grid.
 
-## Menambah G-010
+## Menambah karakter baru (G-011 dan seterusnya)
 
-1. Tambahkan aset yang disetujui ke `assets/characters/G-010/`.
-2. Tambahkan key `G-010` dengan `id`, `displayName`, `featured`, `archiveOrder` unik di akhir, `tags: []`, dan path `card`, `portrait`, `splash`; avatar/banner opsional.
+G-010 ditambahkan di v0.1.3 sebagai Mystery dengan langkah di bawah. Ulangi dengan ID berikutnya.
+
+1. Tambahkan aset yang disetujui ke `assets/characters/G-XXX/`.
+2. Tambahkan key ID baru dengan `id`, `displayName`, `featured`, `archiveOrder` unik di akhir, `tags: []`, dan path `card`, `portrait`, `splash`; avatar/banner opsional.
 3. Pertahankan ID lama dan urutannya. Denominator dan pool summon dihitung dari registry; koleksi lama tidak dihapus. Collection tetap dalam discovery order. Tidak perlu mengganti key localStorage.
-4. Perbarui manifest, preflight dan tes fixture yang saat ini sengaja mengunci sembilan karakter MVP.
-5. Sesuaikan teks editorial yang menyebut “Nine” dan “3 featured” bila jumlah/Featured berubah. Build ulang dan uji progres lama serta koleksi baru.
+4. Perbarui manifest, preflight dan tes fixture yang sengaja mengunci jumlah karakter (kini sepuluh).
+5. Sesuaikan teks editorial yang menyebut “Ten” (index.html dan src/app.js) dan “3 featured” bila jumlah/Featured berubah. Build ulang dan uji progres lama serta koleksi baru.
 
 ## Summon dan penyimpanan
 
@@ -74,7 +76,7 @@ Key: `ai-gallery.state.v1`.
 {"schemaVersion":1,"collectedIds":[],"pendingReveal":null}
 ```
 
-`collectedIds` menyimpan discovery order. Sejak v0.1.2, tiga Featured (G-002, G-005, G-009) otomatis dimiliki sejak awal (koleksi mulai 3/9) dan tidak pernah keluar dari Summon. Summon hanya memilih merata di antara enam mystery yang belum dimiliki, jadi tamat dalam 6 tarikan. `collectedIds` hanya mencatat hasil Summon; daftar milik dihitung oleh `ownedIds()` (Featured dulu, lalu urutan penemuan). Progres lama yang sudah memuat Featured di `collectedIds` tetap valid dan dihitung sekali. Satu hasil ditambahkan dan ditulis sebelum animasi dimulai. `pendingReveal` adalah ID yang telah dimiliki, bukan calon hasil yang bisa di-roll ulang. Refresh menampilkan kembali hasil tersebut. Pending diakui ketika pengguna memilih View Character, Summon Again, atau View Collection; meninggalkan halaman lewat navigasi mempertahankannya untuk pemulihan. Summon Again membuka chamber kembali dan membutuhkan tap Summon ×1 untuk memperoleh karakter berikutnya. Setelah 9/9 tidak ada summon normal lagi.
+`collectedIds` menyimpan discovery order. Sejak v0.1.2, tiga Featured (G-002, G-005, G-009) otomatis dimiliki sejak awal (sejak v0.1.3 koleksi mulai 3/10) dan tidak pernah keluar dari Summon. Summon hanya memilih merata di antara tujuh mystery yang belum dimiliki, jadi tamat dalam 7 tarikan. `collectedIds` hanya mencatat hasil Summon; daftar milik dihitung oleh `ownedIds()` (Featured dulu, lalu urutan penemuan). Progres lama yang sudah memuat Featured di `collectedIds` tetap valid dan dihitung sekali. Satu hasil ditambahkan dan ditulis sebelum animasi dimulai. `pendingReveal` adalah ID yang telah dimiliki, bukan calon hasil yang bisa di-roll ulang. Refresh menampilkan kembali hasil tersebut. Pending diakui ketika pengguna memilih View Character, Summon Again, atau View Collection; meninggalkan halaman lewat navigasi mempertahankannya untuk pemulihan. Summon Again membuka chamber kembali dan membutuhkan tap Summon ×1 untuk memperoleh karakter berikutnya. Setelah 10/10 tidak ada summon normal lagi.
 
 Animasi menggunakan CSS/SVG, preload satu hasil, tombol Skip segera tersedia, reduced-motion diikuti, dan kegagalan gambar tidak mencabut akuisisi. Viewer menampilkan gambar Original secara contain dengan zoom display 1–4×, bukan upscaling resolusi sumber. Gesture memakai Pointer Events; tombol +/−/Reset adalah fallback keyboard/mouse.
 
@@ -105,4 +107,4 @@ python3 tests/preflight.py /path/to/Gallery-prototype.zip
 
 Tanpa argumen ZIP, preflight memeriksa hash, dimensi, decoding dan JSON file source. Fixture `tests/responsive.html` dapat dibuka melalui server source untuk pemeriksaan layout. Fixture tidak masuk build publik.
 
-Lakukan tes manual di Android: mulai 3/9, buka Featured, enam pull semuanya mystery, refresh saat reveal, Skip, lanjut hingga 9/9 (6 pull), periksa urutan dan Archive unlock, uji Back/Forward, pinch dua jari, drag, double-tap, keyboard, reduced motion, kondisi gambar gagal, dan storage tidak tersedia. Lihat TEST-REPORT untuk mana yang sudah benar-benar diuji.
+Lakukan tes manual di Android: mulai 3/10, buka Featured, tujuh pull semuanya mystery, refresh saat reveal, Skip, lanjut hingga 10/10 (7 pull), periksa urutan dan Archive unlock, uji Back/Forward, pinch dua jari, drag, double-tap, keyboard, reduced motion, kondisi gambar gagal, dan storage tidak tersedia. Lihat TEST-REPORT untuk mana yang sudah benar-benar diuji.

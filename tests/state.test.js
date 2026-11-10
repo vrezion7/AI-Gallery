@@ -25,12 +25,12 @@ test("Summon never draws a Featured character", () => {
     assert.equal(registry[id].featured, false);
   }
 });
-test("six pulls exhaust the Mystery pool without duplicates, over 1000 random runs", () => {
+test("seven pulls exhaust the Mystery pool without duplicates, over 1000 random runs", () => {
   const mysteries = ids.filter((i) => !registry[i].featured);
-  assert.equal(mysteries.length, 6);
+  assert.equal(mysteries.length, 7);
   for (let run = 0; run < 1000; run++) {
     let s = sanitize(null, ids);
-    for (let n = 0; n < 6; n++) {
+    for (let n = 0; n < 7; n++) {
       const id = choose(s, registry);
       assert.ok(id);
       assert.ok(!s.collectedIds.includes(id));
@@ -38,16 +38,16 @@ test("six pulls exhaust the Mystery pool without duplicates, over 1000 random ru
       s = sanitize(JSON.parse(JSON.stringify(s)), ids);
       assert.equal(s.pendingReveal, id);
     }
-    assert.equal(new Set(s.collectedIds).size, 6);
+    assert.equal(new Set(s.collectedIds).size, 7);
     assert.deepEqual([...s.collectedIds].sort(), [...mysteries].sort());
     assert.equal(choose(s, registry), null);
-    assert.equal(ownedIds(s, registry).length, 9);
+    assert.equal(ownedIds(s, registry).length, 10);
   }
 });
 test("selection partitions the remaining Mystery IDs equally", () => {
   const s = acquire(sanitize(null, ids), "G-001"),
     pool = ids.filter((i) => i !== "G-001" && !registry[i].featured);
-  assert.equal(pool.length, 5);
+  assert.equal(pool.length, 6);
   for (let i = 0; i < pool.length; i++)
     assert.equal(
       choose(s, registry, () => (i + 0.5) / pool.length),
@@ -77,15 +77,15 @@ test("saves from v0.1.0/v0.1.1 that already list a Featured ID are counted once 
   let s = sanitize({ collectedIds: ["G-006", "G-002"] }, ids);
   assert.deepEqual(ownedIds(s, registry), ["G-002", "G-005", "G-009", "G-006"]);
   const seen = [];
-  for (let id; (id = choose(s, registry)); ) {
+  for (let id; (id = choose(s, registry));) {
     seen.push(id);
     s = acquire(s, id);
   }
-  assert.equal(seen.length, 5);
-  assert.equal(ownedIds(s, registry).length, 9);
+  assert.equal(seen.length, 6);
+  assert.equal(ownedIds(s, registry).length, 10);
   assert.ok(seen.every((id) => !registry[id].featured));
 });
-test("archive fixed slots and featured set", () => {
+test("archive fixed slots (G-010 fills the last slot) and featured set", () => {
   assert.deepEqual(
     Object.values(registry)
       .filter((c) => c.featured)
@@ -95,8 +95,18 @@ test("archive fixed slots and featured set", () => {
   assert.deepEqual(
     Object.values(registry)
       .sort((a, b) => a.archiveOrder - b.archiveOrder)
-      .slice(0, 6)
       .map((c) => c.id),
-    ["G-002", "G-001", "G-005", "G-003", "G-009", "G-004"],
+    [
+      "G-002",
+      "G-001",
+      "G-005",
+      "G-003",
+      "G-009",
+      "G-004",
+      "G-006",
+      "G-007",
+      "G-008",
+      "G-010",
+    ],
   );
 });

@@ -105,7 +105,7 @@ function archive() {
         : '<div class="mystery-wrap"><button class="mystery" data-mystery aria-label="Unrevealed character. Discover through Summon"><b aria-hidden="true">?</b><span>UNREVEALED</span></button></div>',
     )
     .join("");
-  return `<section class="intro"><p class="eyebrow">THE CHARACTER ARCHIVE</p><h1>A world waiting<br>to be discovered.</h1><p>Nine original characters. The featured three are already yours; summon to uncover the rest.</p></section><div class="stats"><span><strong>${owned().length} / ${ids.length}</strong> collected</span><span>${featuredCount()} featured · ${hiddenCount()} to discover</span></div><section class="grid" aria-label="Character archive">${cards}</section>`;
+  return `<section class="intro"><p class="eyebrow">THE CHARACTER ARCHIVE</p><h1>A world waiting<br>to be discovered.</h1><p>Ten original characters. The featured three are already yours; summon to uncover the rest.</p></section><div class="stats"><span><strong>${owned().length} / ${ids.length}</strong> collected</span><span>${featuredCount()} featured · ${hiddenCount()} to discover</span></div><section class="grid" aria-label="Character archive">${cards}</section>`;
 }
 function concealed() {
   return '<section class="empty"><span class="sigil">?</span><h1>A mystery awaits.</h1><p>Discover this character through a free summon.</p><a class="button primary" href="#/summon">Go to Summon</a></section>';
