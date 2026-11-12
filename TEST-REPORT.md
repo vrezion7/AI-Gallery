@@ -1,5 +1,14 @@
 # AI Gallery Sites MVP v0.1 — actual test report
 
+## v0.1.5 addendum (12 November 2026)
+
+Change: G-012 added as a Mystery character (archiveOrder 11, row 6 right; the mobile grid is now a full 6 × 2). Catalog is now 12: 3 Featured + 9 Mystery, so a new visitor starts at 3/12 and finishes in 9 pulls. Copy changed from "Eleven" to "Twelve". Assets copied byte-for-byte from `G-012_paket.zip`. Crop JSON references a 2048 × 2048 master (5,086,846 bytes); the full-body image supplied in chat was 1092 × 1092 but shows the same artwork (mean pixel difference ≈1/255 against the packaged Original), so the shipped assets are unaffected.
+
+- `node --test tests/state.test.js`: 8 tests, 8 passed.
+- `python3 tests/preflight.py`: 60 images decoded, 12 crop JSON validated, all 72 SHA-256 hashes match.
+- Headless Chrome, 360 × 740: 3 / 12 at start; nine pulls gave nine different Mystery IDs including G-012 and reached 12 / 12; Collection showed 12 / 12; G-012 Detail and the last Archive row rendered. Only error: the automatic `/favicon.ico` 404.
+- Not verified on a physical Android device.
+
 ## v0.1.4 addendum (11 November 2026)
 
 Change: G-011 added as a Mystery character (archiveOrder 10, row 6 left; right slot empty). Catalog is now 11: 3 Featured + 8 Mystery, so a new visitor starts at 3/11 and finishes in 8 pulls. Copy changed from "Ten" to "Eleven". Assets copied byte-for-byte from `G-011_paket.zip`; crop JSON source matches the 2048 × 2048 master (5,343,051 bytes).

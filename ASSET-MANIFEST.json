@@ -1,6 +1,6 @@
 {
   "source": "Gallery-prototype.zip",
-  "preflight": "PASS: 55 decoded WebP, 11 valid crop JSON; bytes preserved",
+  "preflight": "PASS: 60 decoded WebP, 12 valid crop JSON; bytes preserved",
   "assets": [
     {
       "source": "G-001/G-001_Final_Card.webp",
@@ -617,6 +617,62 @@
       "path": "assets/characters/G-011/G-011_Final_CropProject.json",
       "bytes": 3449,
       "sha256": "b933492a8d2bc87ad0282cde734378ed45af1e73c45b829bce2a2df614223a05"
+    },
+    {
+      "source": "G-012_paket.zip/G-012_Final_Card.webp",
+      "path": "assets/characters/G-012/G-012_Final_Card.webp",
+      "bytes": 100320,
+      "sha256": "e3aa386b4fa54a37a4a7dd6a7460f907e43dbbb6926f378f29228569ea48c25a",
+      "dimensions": [
+        600,
+        800
+      ]
+    },
+    {
+      "source": "G-012_paket.zip/G-012_Final_Portrait.webp",
+      "path": "assets/characters/G-012/G-012_Final_Portrait.webp",
+      "bytes": 181514,
+      "sha256": "ed21461d1fdae969f9efb679f0ba03b73b6c31acde7b9684666ef23cdc18e343",
+      "dimensions": [
+        800,
+        1200
+      ]
+    },
+    {
+      "source": "G-012_paket.zip/G-012_Final_Original.webp",
+      "path": "assets/characters/G-012/G-012_Final_Original.webp",
+      "bytes": 290828,
+      "sha256": "55175ca026184cd76eb646c810b73ed43e4346b8f5cc6421cf75e75f25e8cd25",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "source": "G-012_paket.zip/G-012_Final_Avatar.webp",
+      "path": "assets/characters/G-012/G-012_Final_Avatar.webp",
+      "bytes": 56262,
+      "sha256": "ae2da3172b24f6cd3c69b93c41379d6f9278119217f28f58ee3c62775f94dc3c",
+      "dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "source": "G-012_paket.zip/G-012_Final_Banner.webp",
+      "path": "assets/characters/G-012/G-012_Final_Banner.webp",
+      "bytes": 134000,
+      "sha256": "2962e79858e43c6eaacda57c309238f46c6a38df84994f9560e9a50a23669fbd",
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "source": "G-012_paket.zip/G-012_Final_CropProject.json",
+      "path": "assets/characters/G-012/G-012_Final_CropProject.json",
+      "bytes": 3445,
+      "sha256": "984e9c6e34e444822ae76842b5075e14252a45c01e230c71fe13e9c88ef47d24"
     }
   ]
 }
